@@ -132,6 +132,8 @@ static NSString *buttonCellIdentifire = @"buttonCellIdentifire";
     }];
     // 马上进入刷新状态
     [myCollectionView.header beginRefreshing];
+    
+    
 
     
 }

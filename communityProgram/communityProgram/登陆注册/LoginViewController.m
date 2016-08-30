@@ -56,7 +56,8 @@
     password_tf.keyboardType = UIKeyboardTypeAlphabet;
     password_tf.delegate = self;
     [self.view addSubview:password_tf];
-    
+    password_tf.text=@"123456";
+    phoneNumber_tf.text=@"13360550875";
     
     login_btn = [UIButton buttonWithType:UIButtonTypeCustom];
     login_btn.frame = CGRectMake(10, password_tf.bottom+40, DeviceWidth-20, 44);
@@ -90,6 +91,7 @@
     [registerButton setTitleColor:[UIColor grayColor] forState:0];
     registerButton.titleLabel.font = Font(14);
     [registerButton addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
+    
     [self.view addSubview:registerButton];
 
 }
